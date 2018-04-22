@@ -4,7 +4,7 @@ cd td
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
-make -j4
+make -j4 VERBOSE=1
 sudo make install
 cd ../../
 git clone https://github.com/giuseppem99/tdlua
