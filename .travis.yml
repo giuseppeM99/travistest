@@ -5,6 +5,7 @@ language: cpp
 compiler: clang
 addons:
   apt:
+    update: true
     packages:
     - libssl-dev
     - ninja
