@@ -54,7 +54,7 @@ local function authstate(state)
             end
             chat = res.id
         end
-        tdlua.setLogLevel(0)
+        tdlua.setLogLevel(1)
         local res = client:execute {
             ["@type"] = "sendMessage",
             chat_id = chat,
