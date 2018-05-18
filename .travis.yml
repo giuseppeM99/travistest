@@ -3,9 +3,17 @@ dist: xenial
 
 language: cpp
 compiler: clang
-before_install:
-  - sudo apt-get -y update
-  - sudo apt-get install -y libssl-dev ninja openssl zlib1g-dev gperf liblua5.2-dev rapidjson-dev lua5.2
-
+addons:
+  apt:
+    packages:
+    - libssl-dev
+    - ninja
+    - openssl
+    - zlib1g-dev
+    - gperf
+    - liblua5.2-dev
+    - rapidjson-dev
+    - lua5.2
+    
 script:
 - ./compile.sh
