@@ -71,11 +71,9 @@ local function authstate(state)
                 }
             }
         }
-        if res.sending_state and res.sending_state["@type"] == "messageSendingStatePending" then
-            os.execute("sleep 1")
-        end
-        print("DONE")
-        client:close()
+    elseif state["@type"] == "updateMessageSendSucceeded" then
+      print("DONE")
+      client:close()
     end
 end
 
