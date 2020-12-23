@@ -12,9 +12,9 @@ addons:
     - openssl
     - zlib1g-dev
     - gperf
-    - liblua5.2-dev
+    - liblua5.4-dev
     - rapidjson-dev
-    - lua5.2
+    - lua5.4
     
 script:
 - ./compile.sh
